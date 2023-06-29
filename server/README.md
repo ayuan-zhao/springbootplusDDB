@@ -1,72 +1,12 @@
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-![BlackCowTech Core - Customer API]
-
-This repository contains the core Customer API for the BlackCowTech platform. It includes the Customer Entity definition, Customer API Controller and the Jersey Configuration for our Spring Boot application.
 
 
-
-### Built With
-
-Java
-Spring Boot
-JAX-RS/Jersey
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-To get a local copy up and running follow these simple steps:
-
-### Prerequisites
-
-* Java
-* Maven
-
-### Installation
-
-1. Clone the repo
-   ```sh
-   git clone git@github.com:BlackCow-Tech/Sudoku.git
-
-mvn clean install
-
-mvn spring-boot:run
-
-The application will start running at http://localhost:8080/api/v1/customer/
-
-
-
-
-Usage
-The API includes the following endpoints:
-
-GET /api/v1/customer/all - retrieves all customers
-GET /api/v1/customer/test - testing endpoint
-POST /api/v1/customer - adds a new customer
-For more examples, please refer to the Documentation
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-<!-- CONTRIBUTING -->
-Contributing
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
-
-Fork the Project
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-Push to the Branch (git push origin feature/AmazingFeature)
-Open a Pull Request
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-<!-- LICENSE -->
 
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
 
