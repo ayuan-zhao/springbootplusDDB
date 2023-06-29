@@ -6,7 +6,7 @@ on:
       - "webapp/**"
 
 jobs:
-  build:
+  build_webapp:
     runs-on: ubuntu-latest
 
     steps:
