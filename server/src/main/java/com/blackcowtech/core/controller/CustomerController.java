@@ -6,6 +6,7 @@ package com.blackcowtech.core.controller;
 import com.blackcowtech.core.entity.BCTCustomer;
 import com.blackcowtech.core.services.CustomerService;
 import com.fasterxml.jackson.databind.JsonNode;
+import java.util.List;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -25,9 +26,10 @@ public class CustomerController {
     //test URL: http://localhost:8080/api/v1/customer/all
     @GET
     @Path("/all")
-    public String getAllCustomers() {
-        return "Hello world2!";
+    public List<BCTCustomer> getAllCustomers() {
+        return customerService.getAllCustomers();
     }
+
 
     @GET
     @Path("/test")
