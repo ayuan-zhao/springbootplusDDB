@@ -3,14 +3,16 @@
 package com.blackcowtech.core.controller;
 
 
+import com.blackcowtech.core.dto.BCTCustomerTbl;
 import com.blackcowtech.core.entity.BCTCustomer;
 import com.blackcowtech.core.services.CustomerService;
 import com.fasterxml.jackson.databind.JsonNode;
-import java.util.List;
+import javax.ws.rs.core.Response;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,8 +28,11 @@ public class CustomerController {
     //test URL: http://localhost:8080/api/v1/customer/all
     @GET
     @Path("/all")
-    public List<BCTCustomer> getAllCustomers() {
-        return customerService.getAllCustomers();
+//    public List<BCTCustomer> getAllCustomers() {
+//        return customerService.getAllCustomers();
+//    }
+    public String getAllCustomers() {
+        return "Hello world2!";
     }
 
 
@@ -48,4 +53,20 @@ public class CustomerController {
         customerService.addCustomer(customer);
         return customer;
     }
+
+    //    http://localhost:8080/api/v1/customer/health
+    @GET
+    @Path("/health")
+    public Response healthCheck() {
+        return Response.status(Response.Status.OK)
+            .entity("Service is running").build();
+    }
+
+    @GET
+    @Path("/getCustomerById")
+    public BCTCustomerTbl getCustomerById(@PathParam("customerId") String customerId) {
+        return customerService.getCustomerById(customerId);
+    }
+
+
 }

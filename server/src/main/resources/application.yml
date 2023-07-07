@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+aws:
+  access:
+    key: ASIA23E7WUOOSMKLBNGI
+    secret-key: Nc+Je7BRLEQgoJbgy2b+V+/JYQN7PgMdAKqD0mUf
+  region: us-east-2
+  end-point:
+    url: http://localhost:8000/

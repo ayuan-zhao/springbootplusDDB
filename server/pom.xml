@@ -36,17 +36,24 @@
       <artifactId>spring-web</artifactId>
     </dependency>
 
-<!--    test -->
+    <!-- dynamoDB start -->
+    <dependency>
+      <groupId>com.amazonaws</groupId>
+      <artifactId>aws-java-sdk-dynamodb</artifactId>
+      <version>1.11.573</version>
+    </dependency>
+    <dependency>
+      <groupId>com.github.derjust</groupId>
+      <artifactId>spring-data-dynamodb</artifactId>
+      <version>5.1.0</version>
+    </dependency>
+    <!--  dynamodb end-->
+
+    <!--    test -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>com.amazonaws</groupId>
-      <artifactId>aws-java-sdk-dynamodb</artifactId>
-      <version>1.12.126</version>
     </dependency>
 
   </dependencies>

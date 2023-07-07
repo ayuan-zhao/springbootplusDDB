@@ -1,4 +1,4 @@
-package com.blackcowtech.core;
+package com.blackcowtech.core.config;
 
 import org.glassfish.jersey.server.ResourceConfig;
 import org.springframework.context.annotation.Configuration;
